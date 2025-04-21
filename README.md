@@ -1,2 +1,2 @@
 # antibiotics
-Code for mater thesis regarding AMR
+Code for master thesis on AMR
