@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Here in the online appendix, all software is provided for the reader to reproduce the results. If the reader only wants to browse the code and view the results file, that is also fine. The results file referred to in the thesis resides in the results directory.
 
 The following software was used to conduct the analysis:
@@ -31,8 +30,3 @@ net get st0734
 
 If you need any assistance, feel free to contact the author at: AMRVT25@gmail.com. I will be happy to help.
 
-Good luck!
-=======
-# antibiotics
-Estimating the Price Elasticity of Antibiotics in Swedish Pig Farming
->>>>>>> 54bdd752f4c4932546dceaa9ec103de8ee639d53
