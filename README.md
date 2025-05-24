@@ -1,4 +1,4 @@
-Here in the online appendix, all software is provided for the reader to reproduce the results. If the reader only wants to browse the code and view the results file, that is also fine. The results file referred to in the thesis resides in the results directory.
+Here in the online appendix, all software is provided for the reader to reproduce the results. If the reader only wants to browse the code and view the results file, that is also fine. The results file referred to in the thesis resides in the results directory. The plots are in the plots directory. 
 
 The following software was used to conduct the analysis:
 
@@ -28,5 +28,6 @@ net sj 23-4
 net install st0734  
 net get st0734
 
-If you need any assistance, feel free to contact the author at: AMRVT25@gmail.com. I will be happy to help.
+If you need any assistance, feel free to contact the author at: AMRVT25@gmail.com  
+I will be happy to help.
 
