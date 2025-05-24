@@ -1,0 +1,189 @@
+   ln_TotalKgActiveSubstanceSold ln_AverageAntibioticsRealPricePerKg ln_headCount
+1                             11                                   9           12
+2                             11                                   8           12
+3                              9                                   9           12
+4                              9                                   9           12
+5                              9                                   9           12
+6                              8                                   7            6
+7                             11                                   9           12
+8                              9                                   8           12
+9                             10                                   9           12
+10                            11                                   9           12
+11                            11                                   9           12
+12                             8                                   7            5
+13                            10                                   9           12
+14                            11                                   9           12
+15                            11                                   8           12
+16                             7                                   9            6
+17                             7                                   8            6
+18                            11                                   8           12
+19                             8                                   7            6
+20                             5                                   3            4
+   ln_RealAvrakningsprisKrPerKg      AIC
+1                             4 357.0878
+2                             4 357.1546
+3                             6 357.6269
+4                             5 357.7816
+5                             7 357.8817
+6                             6 357.9054
+7                             3 357.9317
+8                             6 357.9530
+9                             6 358.3648
+10                            5 358.3792
+11                            6 358.4881
+12                            6 358.4997
+13                            7 358.5276
+14                            7 358.5734
+15                            5 358.6194
+16                            6 358.6690
+17                            6 358.7145
+18                            6 358.7164
+19                            7 358.7288
+20                            0 358.8511
+
+Time series regression with "ts" data:
+Start = 13, End = 239
+
+Call:
+dynlm::dynlm(formula = full_formula, data = data, start = start, 
+    end = end)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.70763 -0.22489  0.02534  0.26581  1.01085 
+
+Coefficients:
+                                           Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                                16.46219   23.08566   0.713   0.4767  
+L(ln_TotalKgActiveSubstanceSold, 1)         0.05487    0.07231   0.759   0.4489  
+L(ln_TotalKgActiveSubstanceSold, 2)        -0.03549    0.07351  -0.483   0.6299  
+L(ln_TotalKgActiveSubstanceSold, 3)        -0.02848    0.07280  -0.391   0.6961  
+L(ln_TotalKgActiveSubstanceSold, 4)         0.08284    0.07210   1.149   0.2520  
+L(ln_TotalKgActiveSubstanceSold, 5)         0.10054    0.07050   1.426   0.1555  
+L(ln_TotalKgActiveSubstanceSold, 6)         0.05060    0.07055   0.717   0.4741  
+L(ln_TotalKgActiveSubstanceSold, 7)         0.15528    0.07076   2.194   0.0294 *
+L(ln_TotalKgActiveSubstanceSold, 8)         0.10141    0.07345   1.381   0.1690  
+L(ln_TotalKgActiveSubstanceSold, 9)         0.09999    0.07427   1.346   0.1799  
+L(ln_TotalKgActiveSubstanceSold, 10)        0.06216    0.07598   0.818   0.4144  
+L(ln_TotalKgActiveSubstanceSold, 11)        0.10432    0.07696   1.356   0.1769  
+ln_AverageAntibioticsRealPricePerKg        -1.19467    1.57627  -0.758   0.4495  
+L(ln_AverageAntibioticsRealPricePerKg, 1)   1.68002    1.57198   1.069   0.2866  
+L(ln_AverageAntibioticsRealPricePerKg, 2)  -1.98183    1.64708  -1.203   0.2304  
+L(ln_AverageAntibioticsRealPricePerKg, 3)  -3.67186    1.67890  -2.187   0.0300 *
+L(ln_AverageAntibioticsRealPricePerKg, 4)   0.57093    1.69167   0.337   0.7361  
+L(ln_AverageAntibioticsRealPricePerKg, 5)   1.74662    1.69805   1.029   0.3050  
+L(ln_AverageAntibioticsRealPricePerKg, 6)  -1.18246    1.68922  -0.700   0.4848  
+L(ln_AverageAntibioticsRealPricePerKg, 7)   1.68114    1.67119   1.006   0.3157  
+L(ln_AverageAntibioticsRealPricePerKg, 8)  -1.58571    1.62545  -0.976   0.3305  
+L(ln_AverageAntibioticsRealPricePerKg, 9)   2.11169    1.61469   1.308   0.1925  
+ln_headCount                              -27.49858   27.11303  -1.014   0.3118  
+L(ln_headCount, 1)                         72.56731   55.05202   1.318   0.1891  
+L(ln_headCount, 2)                        -29.18849   58.42599  -0.500   0.6180  
+L(ln_headCount, 3)                        -57.53982   58.71908  -0.980   0.3284  
+L(ln_headCount, 4)                         59.13424   59.14097   1.000   0.3187  
+L(ln_headCount, 5)                        -23.10789   59.67782  -0.387   0.6990  
+L(ln_headCount, 6)                        -12.43797   58.86902  -0.211   0.8329  
+L(ln_headCount, 7)                        -29.72928   57.03504  -0.521   0.6028  
+L(ln_headCount, 8)                        125.48799   56.63268   2.216   0.0279 *
+L(ln_headCount, 9)                        -87.59257   57.19722  -1.531   0.1274  
+L(ln_headCount, 10)                       -53.11445   57.39647  -0.925   0.3560  
+L(ln_headCount, 11)                        96.08887   53.57686   1.793   0.0745 .
+L(ln_headCount, 12)                       -32.62560   25.80559  -1.264   0.2077  
+ln_RealAvrakningsprisKrPerKg               -0.40632    1.34303  -0.303   0.7626  
+L(ln_RealAvrakningsprisKrPerKg, 1)          1.41236    2.04350   0.691   0.4903  
+L(ln_RealAvrakningsprisKrPerKg, 2)         -2.40600    2.00898  -1.198   0.2326  
+L(ln_RealAvrakningsprisKrPerKg, 3)         -1.75046    2.02592  -0.864   0.3887  
+L(ln_RealAvrakningsprisKrPerKg, 4)          2.12903    1.38661   1.535   0.1264  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4887 on 187 degrees of freedom
+Multiple R-squared:  0.7138,	Adjusted R-squared:  0.6542 
+F-statistic: 11.96 on 39 and 187 DF,  p-value: < 2.2e-16
+
+
+Time series regression with "ts" data:
+Start = 13, End = 239
+
+Call:
+dynlm::dynlm(formula = full_formula, data = data, start = start, 
+    end = end)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.70763 -0.22489  0.02534  0.26581  1.01085 
+
+Coefficients:
+                                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                   16.46219   23.08566   0.713 0.476678    
+L(ln_TotalKgActiveSubstanceSold, 1)           -0.25196    0.13644  -1.847 0.066371 .  
+L(ln_AverageAntibioticsRealPricePerKg, 1)     -1.82614    1.65100  -1.106 0.270111    
+L(ln_headCount, 1)                             0.44376    1.17300   0.378 0.705629    
+L(ln_RealAvrakningsprisKrPerKg, 1)            -1.02139    0.59595  -1.714 0.088207 .  
+d(L(ln_TotalKgActiveSubstanceSold, 1))        -0.69317    0.14308  -4.845 2.65e-06 ***
+d(L(ln_TotalKgActiveSubstanceSold, 2))        -0.72865    0.14853  -4.906 2.02e-06 ***
+d(L(ln_TotalKgActiveSubstanceSold, 3))        -0.75713    0.15485  -4.890 2.17e-06 ***
+d(L(ln_TotalKgActiveSubstanceSold, 4))        -0.67429    0.15931  -4.233 3.62e-05 ***
+d(L(ln_TotalKgActiveSubstanceSold, 5))        -0.57375    0.15785  -3.635 0.000359 ***
+d(L(ln_TotalKgActiveSubstanceSold, 6))        -0.52315    0.15139  -3.456 0.000679 ***
+d(L(ln_TotalKgActiveSubstanceSold, 7))        -0.36788    0.14357  -2.562 0.011184 *  
+d(L(ln_TotalKgActiveSubstanceSold, 8))        -0.26647    0.12657  -2.105 0.036600 *  
+d(L(ln_TotalKgActiveSubstanceSold, 9))        -0.16648    0.10352  -1.608 0.109469    
+d(L(ln_TotalKgActiveSubstanceSold, 10))       -0.10432    0.07696  -1.356 0.176891    
+d(ln_AverageAntibioticsRealPricePerKg)        -1.19467    1.57627  -0.758 0.449460    
+d(L(ln_AverageAntibioticsRealPricePerKg, 1))   2.31149    2.36446   0.978 0.329537    
+d(L(ln_AverageAntibioticsRealPricePerKg, 2))   0.32966    2.40598   0.137 0.891164    
+d(L(ln_AverageAntibioticsRealPricePerKg, 3))  -3.34220    2.36006  -1.416 0.158396    
+d(L(ln_AverageAntibioticsRealPricePerKg, 4))  -2.77128    2.27470  -1.218 0.224643    
+d(L(ln_AverageAntibioticsRealPricePerKg, 5))  -1.02466    2.21645  -0.462 0.644406    
+d(L(ln_AverageAntibioticsRealPricePerKg, 6))  -2.20712    2.17732  -1.014 0.312043    
+d(L(ln_AverageAntibioticsRealPricePerKg, 7))  -0.52598    2.04118  -0.258 0.796934    
+d(L(ln_AverageAntibioticsRealPricePerKg, 8))  -2.11169    1.61469  -1.308 0.192547    
+d(ln_headCount)                              -27.49858   27.11303  -1.014 0.311788    
+d(L(ln_headCount, 1))                         44.62497   34.00834   1.312 0.191069    
+d(L(ln_headCount, 2))                         15.43648   34.10692   0.453 0.651368    
+d(L(ln_headCount, 3))                        -42.10335   34.31457  -1.227 0.221372    
+d(L(ln_headCount, 4))                         17.03089   34.47767   0.494 0.621908    
+d(L(ln_headCount, 5))                         -6.07699   34.44671  -0.176 0.860157    
+d(L(ln_headCount, 6))                        -18.51496   33.65110  -0.550 0.582836    
+d(L(ln_headCount, 7))                        -48.24424   32.91919  -1.466 0.144454    
+d(L(ln_headCount, 8))                         77.24375   33.04783   2.337 0.020480 *  
+d(L(ln_headCount, 9))                        -10.34882   33.44191  -0.309 0.757319    
+d(L(ln_headCount, 10))                       -63.46327   33.27283  -1.907 0.058007 .  
+d(L(ln_headCount, 11))                        32.62560   25.80559   1.264 0.207702    
+d(ln_RealAvrakningsprisKrPerKg)               -0.40632    1.34303  -0.303 0.762574    
+d(L(ln_RealAvrakningsprisKrPerKg, 1))          2.02742    1.36305   1.487 0.138589    
+d(L(ln_RealAvrakningsprisKrPerKg, 2))         -0.37857    1.37772  -0.275 0.783786    
+d(L(ln_RealAvrakningsprisKrPerKg, 3))         -2.12903    1.38661  -1.535 0.126370    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4887 on 187 degrees of freedom
+Multiple R-squared:  0.5604,	Adjusted R-squared:  0.4687 
+F-statistic: 6.113 on 39 and 187 DF,  p-value: < 2.2e-16
+
+[1] "Short run multipliers"
+                                 Term    Estimate Std. Error    t value  Pr(>|t|)
+1                         (Intercept)  16.4621851  23.085658  0.7130914 0.4766781
+2 ln_AverageAntibioticsRealPricePerKg  -1.1946670   1.576268 -0.7579087 0.4494597
+3                        ln_headCount -27.4985818  27.113034 -1.0142200 0.3117882
+4        ln_RealAvrakningsprisKrPerKg  -0.4063239   1.343028 -0.3025430 0.7625744
+[1] "-------------------------------"
+[1] "Long run multipliers"
+                                 Term  Estimate Std. Error    t value  Pr(>|t|)
+1                         (Intercept) 65.335261 106.591172  0.6129519 0.5406529
+2 ln_AverageAntibioticsRealPricePerKg -7.247603   6.461863 -1.1215965 0.2634722
+3                        ln_headCount  1.761198   3.995717  0.4407714 0.6598877
+4        ln_RealAvrakningsprisKrPerKg -4.053698   2.458818 -1.6486373 0.1009010
+  statistic Lower-bound I(0) Upper-bound I(1) alpha   p.value
+t -1.846701        -2.865049        -3.771319  0.05 0.6811971
+  statistic Lower-bound I(0) Upper-bound I(1) alpha  p.value
+F  1.451305         3.224392         4.354236  0.05 0.746586
+[1] "¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤"
+[1] "¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤"
+[1] "Short run multipliers"
+                                 Term    Estimate Std. Error    t value  Pr(>|t|)
+1                         (Intercept)  16.4621851  23.085658  0.7130914 0.4766781
+2 ln_AverageAntibioticsRealPricePerKg  -1.1946670   1.576268 -0.7579087 0.4494597
+3                        ln_headCount -27.4985818  27.113034 -1.0142200 0.3117882
+4        ln_RealAvrakningsprisKrPerKg  -0.4063239   1.343028 -0.3025430 0.7625744
